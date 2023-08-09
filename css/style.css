@@ -1,0 +1,133 @@
+/*null styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*null styles*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.eot");
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+.burger {
+  max-width: 1240px;
+  margin: 30px auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satoshi-Variable";
+  font-weight: 700;
+}
+.burger_left {
+  display: flex;
+}
+.burger_right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-self: center;
+}
+.navigation_item {
+  color: #121212;
+  margin-right: 50px;
+}
+
+.wish {
+  margin-right: 50px;
+}
+
+.shop {
+  margin-right: 50px;
+}
+
+.getintouch {
+  width: 116px;
+  height: 48px;
+  background-color: #BD0000;
+  color: #EAEAEA;
+  border-radius: 5px;
+}
+
+.underline {
+  max-width: 1240px;
+  width: 100%;
+  height: 1px;
+  margin: 20px auto;
+  background-color: #A9A9A9;
+}
