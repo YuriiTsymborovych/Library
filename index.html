@@ -1,40 +1,1330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="burger">
-            <div class="burger_left">
-                <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
-                <nav class="navigation">
-                    <a href="#" class="navigation_item">Home</a>
-                    <a href="#" class="navigation_item">Shop</a>
-                    <a href="#" class="navigation_item">About Us</a>
-                    <a href="#" class="navigation_item">Contact Us</a>
-                </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="burger">
+                <div class="burger__left">
+                    <a href="#"
+                        ><img src="img/logo.png" alt="logo" class="logo"
+                    /></a>
+                    <nav class="navigation">
+                        <a href="#" class="navigation__item">Home</a>
+                        <a href="#" class="navigation__item">Shop</a>
+                        <a href="#" class="navigation__item">About Us</a>
+                        <a href="#" class="navigation__item">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="burger__right">
+                    <a href="#" class="fav__link"
+                        ><img src="img/heart.png" alt="wish list" class="wish"
+                    /></a>
+                    <a href="#" class="shop__link"
+                        ><img
+                            src="img/shopping-cart.png"
+                            alt="shopping-cart"
+                            class="shop"
+                    /></a>
+                    <a href="#"
+                        ><button class="getintouch">Get In Touch</button></a
+                    >
+                </div>
             </div>
-            <div class="burger_right">
-                <a href="#" class="fav_link"><img src="img/heart.png" alt="wish list" class="wish"></a>
-                <a href="#" class="shop_link"><img src="img/shopping-cart.png" alt="shopping-cart" class="shop"></a>
-                <a href="#"><button class="getintouch">Get In Touch</button></a>
-            </div>
-        </div>
-        <div class="underline"></div>
+            <div class="underline"></div>
+        </header>
+
         <div class="profilesearch">
             <div class="profile">
-                <img src="img/Ellipse 1.png" alt="profile picture" class="profile_picture">
-                <p class="profile_greet">Hi,Lara</p>
-                <p class="profile_email">example@gmail.com</p>
+                <img
+                    src="img/Ellipse 1.png"
+                    alt="profile picture"
+                    class="profile__picture"
+                />
+                <div class="data">
+                    <p class="data__greet">Hi, Lara</p>
+                    <p class="data__email">Example@gmail.com</p>
+                </div>
             </div>
-            <div class="searchform">
-                
+            <form action="#" class="searchform">
+                <select type="text" class="category">
+                    <option value="category__type">Category</option>
+                    <option value="category__type">Fantasie</option>
+                    <option value="category__type">Detective</option>
+                    <option value="category__type">History</option>
+                    <option value="category__type">Science</option>
+                    <option value="category__type">Manga</option>
+                </select>
+                <input
+                    type="text"
+                    class="searchform__input"
+                    placeholder="Search Books Here"
+                />
+            </form>
+        </div>
+        <div class="bestsellerbook">
+            <div class="bookwrapper">
+                <h2 class="bestsellerbook__title">BEST SELLER</h2>
+                <h2 class="bestsellerbook__name">Pushing Clouds</h2>
+                <div class="bookdetails">
+                    <p class="bookdetails__author">Napolen Hill</p>
+                    <p class="bookdetails__type">Buisness & Strategy</p>
+                </div>
+                <p class="bestsellerbook__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    tincidunt in pharetra non faucibus consectetur nunc arcu,
+                    nisl.
+                </p>
+                <p class="bestsellerbook__price">
+                    $ 9.5 <span class="fullprice">$ 12.0</span>
+                </p>
+                <div class="buttons">
+                    <button class="buttons__buy">Buy Now</button>
+                    <button class="buttons__details">See Details</button>
+                </div>
+            </div>
+            <div class="slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 6.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Puerto Rico Strong
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 7.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 8.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Woman of Endurance
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 9.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 6.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Puerto Rico Strong
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 7.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 8.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Woman of Endurance
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 9.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 6.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Puerto Rico Strong
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 7.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 8.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    Woman of Endurance
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img
+                            src="img/Rectangle 9.png"
+                            alt="Book Image"
+                            class="slide__image"
+                        />
+                        <div class="bookcontent">
+                            <div class="bookdetails">
+                                <h3 class="bookdetails__title">
+                                    A Story of Home, Hope, and Rebuilding
+                                </h3>
+                                <p class="bookdetails__author">Karina Nicole</p>
+                            </div>
+                            <div class="bookraiting">
+                                <p class="bookraiting__price">$ 10.4</p>
+                                <img
+                                    src="img/Group 45.png"
+                                    alt="Raiting"
+                                    class="bookraiting__stars"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-</body>
+        <div class="logos">
+            <img src="img/Vector.png" alt="Logo1" class="logos__img" />
+            <img src="img/Vector2.png" alt="Logo2" class="logos__img" />
+            <img src="img/Vector3.png" alt="Logo3" class="logos__img" />
+            <img src="img/Vector4.png" alt="Logo4" class="logos__img" />
+        </div>
+        <div class="recomendation">
+            <h2 class="recomendation__title">Recomended For You</h2>
+            <p class="recomendation__describe">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <div class="recbooks">
+                <div class="recbook">
+                    <h3 class="recbook__title">Teribble</h3>
+                    <div class="recposter poster1">
+                        <div class="posterinfo">
+                            <button class="shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="posterinfo__price">$ 24.89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recbook">
+                    <h3 class="recbook__title">Take Tango</h3>
+                    <div class="recposter poster2">
+                        <div class="posterinfo">
+                            <button class="shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="posterinfo__price">$ 24.89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recbook">
+                    <h3 class="recbook__title">Adventure</h3>
+                    <div class="recposter poster3">
+                        <div class="posterinfo">
+                            <button class="shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="posterinfo__price">$ 24.89</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recbook">
+                    <h3 class="recbook__title">Real Life</h3>
+                    <div class="recposter poster4">
+                        <div class="posterinfo">
+                            <button class="shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="posterinfo__price">$ 24.89</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preferences">
+            <div class="preference">
+                <img
+                    src="img/flash.png"
+                    alt="quick delivery"
+                    class="preference__img"
+                />
+                <h2 class="preference__name">Quick Delivery</h2>
+                <p class="preference__describe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                </p>
+            </div>
+            <div class="preference">
+                <img
+                    src="img/shield-tick.png"
+                    alt="quick delivery"
+                    class="preference__img"
+                />
+                <h2 class="preference__name">Secure Payment</h2>
+                <p class="preference__describe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                </p>
+            </div>
+            <div class="preference">
+                <img
+                    src="img/star.png"
+                    alt="quick delivery"
+                    class="preference__img"
+                />
+                <h2 class="preference__name">Best Qualityy</h2>
+                <p class="preference__describe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                </p>
+            </div>
+            <div class="preference">
+                <img
+                    src="img/like.png"
+                    alt="quick delivery"
+                    class="preference__img"
+                />
+                <h2 class="preference__name">Return Guarantee</h2>
+                <p class="preference__describe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                </p>
+            </div>
+        </div>
+        <div class="sale">
+            <h2 class="sale__title">Books on Sale</h2>
+            <div class="booksonsale swiper slider">
+                <div class="swiper-wrapper">
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 12.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 16.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 17.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 18.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 12.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 16.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 17.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salebook swiper-slide">
+                        <img
+                            src="img/Rectangle 18.png"
+                            alt="Book Image"
+                            class="salebook__image"
+                        />
+                        <h3 class="salebook__name">Take Out Tango</h3>
+                        <p class="salebook__genre">SPORTS, DRAMA</p>
+                        <div class="pricerate">
+                            <p class="pricerate__price">
+                                $ 6.5 <span class="prevprice">$ 12.2</span>
+                            </p>
+                            <div class="rate">
+                                <img
+                                    src="img/star1.png"
+                                    alt="Star"
+                                    class="rate__image"
+                                />
+                                <p class="rate__num">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="midleline"></div>
+        <div class="feature">
+            <h2 class="feature__title">Featured Product</h2>
+            <p class="feature__describe">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <div class="featureslider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/Rectangle 19.png"
+                            alt=""
+                            class="swiper-slide__image"
+                        />
+                        <div class="featureabout">
+                            <h3 class="featureabout__status">BEST SELLER</h3>
+                            <h4 class="featureabout__title">A Heavy LIft</h4>
+                            <div class="featuredetails">
+                                <p class="featuredetails__author">
+                                    Napoleon Hill
+                                </p>
+                                <p class="featuredetails__genre">
+                                    Buisness & Strategy
+                                </p>
+                            </div>
+                            <p class="featureabout__description">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sit tincidunt in pharetra non
+                                faucibus consectetur nunc arcu, nisl.
+                            </p>
+                            <p class="featureabout__price">
+                                $ 9.5 <span class="prevprice">$ 12.0</span>
+                            </p>
+                            <div class="featurebuttons">
+                                <button class="featurebuttons__buy">
+                                    Buy Now
+                                </button>
+                                <button class="featurebuttons__details">
+                                    See Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="offers">
+            <h2 class="offers__title">Special Offers</h2>
+            <div class="offerscontent">
+                <div class="offer">
+                    <img src="img/offer1.png" alt="" class="offer__image" />
+                    <div class="offerdescribe">
+                        <div class="offerdescribe__name">TERRRIBLE MADNESS</div>
+                        <div class="offergenres">
+                            <p class="offergenres__genre">BIOGRAPHY</p>
+                            <p class="offergenres__genre">THRILLER</p>
+                            <p class="offergenres__genre">HORROR</p>
+                        </div>
+                        <p class="offerdescribe__about">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="offooter">
+                            <button class="offooter__add shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="offooter__price">
+                                $ 18,78 <span class="prevprice">$ 18,78</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="img/offer2.png" alt="" class="offer__image" />
+                    <div class="offerdescribe">
+                        <div class="offerdescribe__name">SECONDS</div>
+                        <div class="offergenres">
+                            <p class="offergenres__genre">BIOGRAPHY</p>
+                            <p class="offergenres__genre">THRILLER</p>
+                            <p class="offergenres__genre">HORROR</p>
+                        </div>
+                        <p class="offerdescribe__about">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="offooter">
+                            <button class="offooter__add shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="offooter__price">
+                                $ 18,78 <span class="prevprice">$ 18,78</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="img/offer3.png" alt="" class="offer__image" />
+                    <div class="offerdescribe">
+                        <div class="offerdescribe__name">REWORK</div>
+                        <div class="offergenres">
+                            <p class="offergenres__genre">BIOGRAPHY</p>
+                            <p class="offergenres__genre">THRILLER</p>
+                            <p class="offergenres__genre">HORROR</p>
+                        </div>
+                        <p class="offerdescribe__about">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="offooter">
+                            <button class="offooter__add shopbtn">
+                                <img
+                                    src="img/shopping-cart.svg"
+                                    alt="Shopping-cart"
+                                    class="shopbtn__busket"
+                                />
+                                <p class="shopbtn__text">Ad To Cart</p>
+                            </button>
+                            <p class="offooter__price">
+                                $ 18,78 <span class="prevprice">$ 18,78</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <h2 class="testimonials__title">Testimonials</h2>
+            <p class="testimonials__describe">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="testimonialspages">
+                <div class="testimonial">
+                    <div class="testhead">
+                        <img
+                            src="/img/photo1.png"
+                            alt=""
+                            class="testhead__photo"
+                        />
+                        <div class="testdata">
+                            <h3 class="testdata__name">Jason Huang</h3>
+                            <p class="testdata__status">Book Lovers</p>
+                        </div>
+                        <img
+                            src="/img/Group 45.png"
+                            alt=""
+                            class="testhead__rate"
+                        />
+                    </div>
+                    <p class="testimonial__describe">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="testhead">
+                        <img
+                            src="/img/photo2.png"
+                            alt=""
+                            class="testhead__photo"
+                        />
+                        <div class="testdata">
+                            <h3 class="testdata__name">Miranda Lee</h3>
+                            <p class="testdata__status">Book Lovers</p>
+                        </div>
+                        <img
+                            src="/img/Group 45.png"
+                            alt=""
+                            class="testhead__rate"
+                        />
+                    </div>
+                    <p class="testimonial__describe">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <div class="testhead">
+                        <img
+                            src="/img/photo3.png"
+                            alt=""
+                            class="testhead__photo"
+                        />
+                        <div class="testdata">
+                            <h3 class="testdata__name">Lara Lee</h3>
+                            <p class="testdata__status">Book Lovers</p>
+                        </div>
+                        <img
+                            src="/img/Group 45.png"
+                            alt=""
+                            class="testhead__rate"
+                        />
+                    </div>
+                    <p class="testimonial__describe">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <h2 class="news__title">Latest News</h2>
+            <p class="news__describe">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="newspages">
+                <div class="newspage">
+                    <img src="img/news1.png" alt="" class="newspage__image" />
+                    <div class="pagecontent">
+                        <p class="pagecontent__title">
+                            Benefits of reading : smart, Happy, Intelligent
+                        </p>
+                        <p class="pagecontent__describe">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="calendar">
+                            <img
+                                src="img/calendar.svg"
+                                alt=""
+                                class="calendar__image"
+                            />
+                            <p class="calendar__date">24 March, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newspage">
+                    <img src="img/news2.png" alt="" class="newspage__image" />
+                    <div class="pagecontent">
+                        <p class="pagecontent__title">
+                            Benefits of reading : smart, Happy, Intelligent
+                        </p>
+                        <p class="pagecontent__describe">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="calendar">
+                            <img
+                                src="img/calendar.svg"
+                                alt=""
+                                class="calendar__image"
+                            />
+                            <p class="calendar__date">24 March, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newspage">
+                    <img src="img/news3.png" alt="" class="newspage__image" />
+                    <div class="pagecontent">
+                        <p class="pagecontent__title">
+                            Benefits of reading : smart, Happy, Intelligent
+                        </p>
+                        <p class="pagecontent__describe">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="calendar">
+                            <img
+                                src="img/calendar.svg"
+                                alt=""
+                                class="calendar__image"
+                            />
+                            <p class="calendar__date">24 March, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newspage">
+                    <img src="img/news4.png" alt="" class="newspage__image" />
+                    <div class="pagecontent">
+                        <p class="pagecontent__title">
+                            Benefits of reading : smart, Happy, Intelligent
+                        </p>
+                        <p class="pagecontent__describe">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sit tincidunt in pharetra non faucibus
+                            consectetur nunc arcu, nisl.
+                        </p>
+                        <div class="calendar">
+                            <img
+                                src="img/calendar.svg"
+                                alt=""
+                                class="calendar__image"
+                            />
+                            <p class="calendar__date">24 March, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="advantages__container">
+                <div class="advantage">
+                    <img
+                        src="/img/profile-2user.png"
+                        alt=""
+                        class="advantage__image"
+                    />
+                    <h2 class="advantage__count">125,663</h2>
+                    <p class="advantage__kind">Happy Customer</p>
+                </div>
+                <div class="advantage">
+                    <img src="/img/book.png" alt="" class="advantage__image" />
+                    <h2 class="advantage__count">50,672</h2>
+                    <p class="advantage__kind">Book Collectionsr</p>
+                </div>
+                <div class="advantage">
+                    <img src="/img/shop.png" alt="" class="advantage__image" />
+                    <h2 class="advantage__count">1,562</h2>
+                    <p class="advantage__kind">Our Stores</p>
+                </div>
+                <div class="advantage">
+                    <img
+                        src="/img/bxs_leaf.png"
+                        alt=""
+                        class="advantage__image"
+                    />
+                    <h2 class="advantage__count">475</h2>
+                    <p class="advantage__kind">Famous Writers</p>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <p class="subscribe__details">
+                Subscribe our newsletter for newest books updates
+            </p>
+            <form action="#" class="form-subscribe">
+                <div class="form-input">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Your Email Address" />
+                    <button class="subscribe-btn">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="authors">
+                <img src="img/Group 1 5.png" alt="" class="authors__logo" />
+                <p class="authors__designer">
+                    Bookland is a Book Store Ecommerce Website Template by
+                    DexignZone lorem ipsum dolor sit
+                </p>
+                <div class="socnetworks">
+                    <img
+                        src="img/facebook.png"
+                        alt=""
+                        class="socnetworks__network"
+                    />
+                    <img
+                        src="img/twitter.png"
+                        alt=""
+                        class="socnetworks__network"
+                    />
+                    <img
+                        src="img/inst.png"
+                        alt=""
+                        class="socnetworks__network"
+                    />
+                </div>
+            </div>
+            <div class="links">
+                <h2 class="footertitle">Our Links</h2>
+                <a href="#" class="footerlink">About Us</a>
+                <a href="#" class="footerlink">Contact Us</a>
+                <a href="#" class="footerlink">Privacy Policy</a>
+                <a href="#" class="footerlink">Pricing Table</a>
+                <a href="#" class="footerlink">FAQ</a>
+            </div>
+            <div class="bookland">
+                <h2 class="footertitle">Bookland</h2>
+                <a href="#" class="footerlink">Soudemy</a>
+                <a href="#" class="footerlink">Services</a>
+                <a href="#" class="footerlink">Book Details</a>
+                <a href="#" class="footerlink">Blog Details</a>
+                <a href="#" class="footerlink">Shop</a>
+            </div>
+            <div class="resources">
+                <h2 class="footertitle">Resources</h2>
+                <a href="#" class="footerlink">Download</a>
+                <a href="#" class="footerlink">Help Center</a>
+                <a href="#" class="footerlink">Shop Cart</a>
+                <a href="#" class="footerlink">Login</a>
+                <a href="#" class="footerlink">Partner</a>
+            </div>
+            <div class="contacts">
+                <h2 class="footertitle">Get in Touch With Us</h2>
+                <div class="location">
+                    <img
+                        src="img/location.png"
+                        alt=""
+                        class="location__image"
+                    />
+                    <p class="location__describe">
+                        832 Thompson Drive, San Fransisco CA 94107,US
+                    </p>
+                </div>
+                <div class="phone">
+                    <img src="img/call.png" alt="" class="phone__image" />
+                    <p class="phone__describe">+123 3451236 556</p>
+                </div>
+                <div class="email">
+                    <img src="img/sms.svg" alt="" class="email__image" />
+                    <p class="email__describe">Exaple@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
